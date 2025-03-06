@@ -1,0 +1,168 @@
+/* ヘッダーのスタイル */
+header {
+    background: linear-gradient(45deg, #8BC6EC 0%, #9599E2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 15px rgba(139, 198, 236, 0.2);
+}
+
+/* コンセプトのスタイル */
+.concept {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    line-height: 2;
+}
+
+/* 施設情報のスタイル */
+.therapy-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.therapy-item h3 {
+    color: #6494ED;
+    margin-top: 0;
+}
+
+/* 表のスタイル */
+.schedule-table, .business-hours {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.schedule-table th,
+.schedule-table td,
+.business-hours th,
+.business-hours td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+.schedule-table th,
+.business-hours th {
+    background: #f8f9fa;
+}
+
+/* 見出しのスタイル */
+h2 {
+    color: #6494ED;
+    border-bottom: 3px solid #6494ED;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* アクセス情報のスタイル */
+.access-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.access-map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.access-detail {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* トップへ戻るボタン */
+.back-to-top {
+    display: inline-block;
+    background: #6494ED;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #4A7BD1;
+    transform: translateY(-2px);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .access-info {
+        flex-direction: column;
+    }
+    
+    .access-map,
+    .access-detail {
+        width: 100%;
+    }
+    
+    .schedule-table,
+    .business-hours {
+        font-size: 0.9rem;
+    }
+    
+    .schedule-table th,
+    .schedule-table td,
+    .business-hours th,
+    .business-hours td {
+        padding: 0.5rem;
+    }
+}
+/* まあぶる用のカラー設定 */
+.marble-theme {
+    --primary-color: #FFA500;  /* オレンジ系 */
+    --secondary-color: #FFD700;
+    --accent-color: #FF8C00;
+}
+
+/* めいぷる用のカラー設定 */
+.maple-theme {
+    --primary-color: #8B4513;  /* ブラウン系 */
+    --secondary-color: #DEB887;
+    --accent-color: #D2691E;
+}
+
+/* ここふる用のカラー設定 */
+.cocofull-theme {
+    --primary-color: #FF69B4;  /* ピンク系 */
+    --secondary-color: #FFB6C1;
+    --accent-color: #FF1493;
+}
+
+/* みらくる用のカラー設定 */
+.miracle-theme {
+    --primary-color: #4B0082;  /* パープル系 */
+    --secondary-color: #9370DB;
+    --accent-color: #663399;
+}
+
+/* HANEUL用のカラー設定 */
+.haneul-theme {
+    --primary-color: #1E90FF;  /* ブルー系 */
+    --secondary-color: #87CEEB;
+    --accent-color: #4169E1;
+}
+/* facility.cssの共通スタイル */
+header {
+    background-color: var(--primary-color);
+}
+
+.section h2 {
+    color: var(--primary-color);
+}
+
+.timeline-item {
+    border-left: 3px solid var(--secondary-color);
+}
+
+.button {
+    background-color: var(--accent-color);
+}

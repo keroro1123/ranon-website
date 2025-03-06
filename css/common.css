@@ -1,0 +1,63 @@
+/* フォントのインポート */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+/* 基本スタイル */
+body {
+    font-family: 'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #575757;
+    background-color: #fdf6f0;
+}
+
+/* 共通のコンテナスタイル */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 共通のセクションスタイル */
+.section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 見出しのスタイル */
+h2 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* ボタンの共通スタイル */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* フッターの共通スタイル */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    width: 100%;
+}
+
+/* レスポンシブデザインの共通設定 */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+}

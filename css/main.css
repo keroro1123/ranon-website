@@ -1,0 +1,111 @@
+/* ヘッダーのスタイル */
+header {
+    background: linear-gradient(45deg, #FF9A8B 0%, #FF6B95 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 15px rgba(255, 107, 149, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ナビゲーションのスタイル */
+nav {
+    background-color: #FFF;
+    padding: 1rem;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #FF6B95;
+    text-decoration: none;
+    margin: 0 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FF6B95;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* 施設カードのスタイル */
+.facilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.facility-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-card h3 {
+    color: #FF6B95;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.facility-card img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+/* お問い合わせセクションのスタイル */
+.contact-info {
+    background-color: #fff9f8;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px dashed #FF9A8B;
+}
+
+.contact-info p {
+    margin: 0.7rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #FF9A8B;
+}
+
+/* メインページ用フッター */
+footer {
+    background: linear-gradient(45deg, #FF9A8B 0%, #FF6B95 100%);
+    position: fixed;
+    bottom: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .facilities {
+        grid-template-columns: 1fr;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 1rem;
+    }
+}
