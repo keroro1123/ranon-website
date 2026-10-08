@@ -1,0 +1,48 @@
+/* Smartphone usability: preserve existing desktop design and motion. */
+@media (max-width:650px){
+  html{scroll-padding-top:140px}
+  .wrap{padding-left:18px;padding-right:18px}
+  .site-header .header-inner{padding-top:8px;padding-bottom:10px}
+  .site-header .brand{justify-content:center;gap:8px}
+  .site-header .brand-sub{font-size:11px}
+  /* All four links visible without hidden horizontal navigation. */
+  .site-header nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;overflow:visible;padding:8px 0 0;white-space:normal}
+  .site-header nav a{min-width:0;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:clamp(9px,2.65vw,12px);line-height:1.35;padding:7px 2px;border-radius:12px;background:#f0f7f3}
+  .site-header nav .nav-contact{padding:7px 3px;background:var(--teal);color:#fff!important}
+  .hero-layout{padding-top:30px}
+  .hero h1{font-size:clamp(30px,8.5vw,38px);line-height:1.5;margin:15px 0}
+  .hero-copy>p{font-size:14px;line-height:1.95}
+  .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:24px}
+  .hero-actions .btn{min-width:0;padding:13px 12px;gap:6px;font-size:12px;min-height:48px}
+  .hero-art{min-height:220px;padding:12px 0 20px}
+  .hero-art .art-center img{max-width:100%;width:min(320px,88vw)}
+  .section{padding-top:60px;padding-bottom:60px;scroll-margin-top:140px}
+  .section h2{font-size:clamp(27px,7.4vw,35px)}
+  .section-heading{margin-bottom:26px}
+  .facility-grid{gap:18px}
+  .facility-card{border-radius:18px}
+  .card-art{height:clamp(175px,50vw,235px)}
+  .card-content{padding:20px}
+  .card-content h3{font-size:20px}
+  .card-content p{min-height:0}
+  .document-grid{gap:14px}
+  .document-card{min-width:0;gap:12px;padding:18px 14px}
+  .document-card>div:nth-child(2){min-width:0;overflow-wrap:anywhere}
+  .document-card b{flex-shrink:0}
+  .doc-icon{width:46px;height:46px;font-size:23px}
+  .contact-actions{display:grid;grid-template-columns:1fr;gap:10px}
+  .contact-actions .btn{width:100%;min-height:48px}
+  .contact-details{overflow-wrap:anywhere}
+  .footer-inner{gap:8px}
+}
+@media(max-width:360px){
+  .wrap{padding-left:14px;padding-right:14px}
+  .site-header nav{gap:3px}
+  .site-header nav a{font-size:9px;padding-left:1px;padding-right:1px}
+  .hero-actions{grid-template-columns:1fr}
+  .hero-actions .btn{justify-content:space-between}
+}
+@media(hover:none){
+  .facility-card:hover{transform:none}
+  .facility-card:hover .exterior-photo{transform:none}
+}
