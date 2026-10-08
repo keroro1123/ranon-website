@@ -1,0 +1,8 @@
+/* Subtle ambient motion — visual only, no layout movement */
+.hero{position:relative;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(24px);opacity:.42;will-change:transform,opacity}
+.hero::before{width:min(34vw,420px);aspect-ratio:1;background:radial-gradient(circle,#c5e8dd 0%,#d8efe5 55%,transparent 75%);top:-18%;right:-8%;animation:ranon-ambient-drift 24s ease-in-out infinite alternate}
+.hero::after{width:min(30vw,360px);aspect-ratio:1;background:radial-gradient(circle,#ffe3c5 0%,#f8e8d6 50%,transparent 75%);bottom:-20%;left:-7%;animation:ranon-ambient-drift 30s ease-in-out infinite alternate-reverse}
+@keyframes ranon-ambient-drift{0%{transform:translate3d(0,0,0) scale(1);opacity:.3}50%{opacity:.45}100%{transform:translate3d(18px,-16px,0) scale(1.08);opacity:.38}}
+@media(max-width:650px){.hero::before{width:260px;right:-110px;top:2%}.hero::after{width:220px;left:-95px;bottom:0}}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none;will-change:auto}}
