@@ -1,0 +1,9 @@
+/* RANON motion set: headings, staggered cards, gentle photo zoom */
+@media(prefers-reduced-motion:no-preference){
+  .motion-ready .reveal-on-scroll{opacity:0;transform:translate3d(0,30px,0);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1)}
+  .motion-ready .reveal-on-scroll.is-visible{opacity:1;transform:none}
+  .motion-ready .facility-card.reveal-on-scroll{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease;transition-delay:var(--reveal-delay,0ms)}
+  .motion-ready .facility-card.reveal-on-scroll.is-visible:hover{transform:translateY(-5px)}
+  .facility-card .exterior-photo{transition:transform .65s cubic-bezier(.2,.8,.2,1);transform-origin:center}
+  .facility-card:hover .exterior-photo,.facility-card:focus-visible .exterior-photo{transform:scale(1.055)}
+}
