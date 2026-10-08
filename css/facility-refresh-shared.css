@@ -1,0 +1,73 @@
+/* RANON facility page refresh — scoped to 共通 */
+body.facility-refreshed{background:#f7faf8;color:#304c49;font-family:'M PLUS Rounded 1c',Meiryo,sans-serif}
+body.facility-refreshed *{box-sizing:border-box}
+body.facility-refreshed > header{background:#fff!important;border-radius:0!important;padding:0!important;box-shadow:0 1px 12px #123c3810!important;position:relative;z-index:3}
+body.facility-refreshed > header .nav-links a{color:#275f60!important;font-weight:700;font-size:14px}
+body.facility-refreshed main{overflow:hidden}
+body.facility-refreshed .crumb{max-width:1160px;margin:0 auto;padding:20px 28px 4px;font-size:12px;color:#748987}
+body.facility-refreshed .crumb a{color:#527e7c;text-decoration:none}
+body.facility-refreshed .crumb span{padding:0 9px}
+body.facility-refreshed .facility-hero{padding:36px 22px 45px;text-align:center;background:linear-gradient(140deg,#eef8f1,#f8fcf9 65%,#fff4e9);border-radius:0 0 44px 44px}
+body.facility-refreshed .facility-hero h1{font-size:clamp(25px,3.4vw,42px);line-height:1.5;color:#176c64;margin:0 auto 10px;max-width:1000px}
+body.facility-refreshed .facility-hero .subtitle{font-size:clamp(14px,1.8vw,19px);color:#5d7971;margin:12px 0 0}
+body.facility-refreshed .exterior-feature{max-width:760px;margin:26px auto 0}
+body.facility-refreshed .exterior-feature img{height:clamp(260px,39vw,420px);max-height:none;object-fit:contain;background:#eaf0eb;border-radius:22px;box-shadow:0 15px 40px #174f4720}
+body.facility-refreshed .facility-jump{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding-top:25px;padding-bottom:8px}
+body.facility-refreshed .facility-jump a{border:1px solid #c9e3d9;border-radius:999px;background:#fff;padding:11px 19px;color:#256e66;text-decoration:none;font-size:13px;font-weight:700}
+body.facility-refreshed main section:not(.facility-hero){scroll-margin-top:25px}
+body.facility-refreshed main section:not(.facility-hero):not(.contact-cta){padding:30px 0}
+body.facility-refreshed main section .container{max-width:1050px}
+body.facility-refreshed main h2{font-size:clamp(22px,2.5vw,29px);color:#176c64;border-bottom:0;margin:0 0 25px;text-align:center}
+body.facility-refreshed main h2:after{content:'';display:block;width:56px;height:3px;background:#eaa263;border-radius:10px;margin:12px auto 0}
+body.facility-refreshed .info-grid,body.facility-refreshed .content-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.facility-refreshed .info-item,body.facility-refreshed .content-item,body.facility-refreshed .special-activities,body.facility-refreshed .program-policy{background:#fff;border:1px solid #e2eee9;border-radius:18px;padding:24px;box-shadow:0 5px 18px #214f4310}
+body.facility-refreshed .info-item h3,body.facility-refreshed .content-item h3{color:#1d7770;margin:0 0 12px;font-size:17px}
+body.facility-refreshed .info-item p,body.facility-refreshed .content-item p{margin:0;font-size:14px;line-height:1.9}
+body.facility-refreshed .therapy-content{background:#f0f7f3}
+body.facility-refreshed .therapy-content .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+body.facility-refreshed .therapy-content .section-intro{max-width:800px;margin:0 auto 25px;text-align:center;line-height:1.9}
+body.facility-refreshed .additional-info{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+body.facility-refreshed .schedule-table{background:#fff;border-radius:16px;overflow:hidden;table-layout:fixed}
+body.facility-refreshed .schedule-table th{background:#dcefe7;color:#24695e;text-align:center}
+body.facility-refreshed .schedule-table td{vertical-align:top;line-height:1.9}
+body.facility-refreshed .schedule-table dt{font-weight:700;color:#21746c;margin-top:12px}
+body.facility-refreshed .schedule-table dd{margin-left:0}
+body.facility-refreshed .access{background:#f0f7f3}
+body.facility-refreshed .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+body.facility-refreshed .access-grid>div{background:#fff;border-radius:18px;padding:25px;min-width:0}
+body.facility-refreshed .access-info h3{color:#27736d;margin:0 0 4px}
+body.facility-refreshed .access-info p{margin:0 0 17px}
+body.facility-refreshed .map-link{display:flex;min-height:180px;align-items:center;justify-content:center;background:#edf7f3;border-radius:14px;padding:20px;text-align:center;color:#176c64;font-weight:700;text-decoration:none}
+body.facility-refreshed .contact-cta{background:linear-gradient(135deg,#187e78,#2d9991);color:#fff;text-align:center;padding:55px 20px}
+body.facility-refreshed .contact-cta h2{color:#fff}
+body.facility-refreshed .contact-cta h2:after{background:#ffcc96}
+body.facility-refreshed .cta-kicker{letter-spacing:.16em;font-size:12px}
+body.facility-refreshed .cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+body.facility-refreshed .cta-actions a{padding:13px 25px;border-radius:999px;font-weight:700;text-decoration:none}
+body.facility-refreshed .cta-primary{background:#fff;color:#146e67}
+body.facility-refreshed .cta-secondary{background:#f7b67e;color:#583b25}
+body.facility-refreshed footer{background:#195c5a}
+@media(max-width:760px){body.facility-refreshed .info-grid,body.facility-refreshed .content-grid,body.facility-refreshed .therapy-content .content-grid,body.facility-refreshed .additional-info,body.facility-refreshed .access-grid{grid-template-columns:1fr}body.facility-refreshed .facility-hero{padding:26px 14px 30px}body.facility-refreshed .facility-jump a{padding:9px 12px;font-size:12px}body.facility-refreshed .schedule-table th,body.facility-refreshed .schedule-table td{padding:10px;font-size:12px}body.facility-refreshed .exterior-feature img{height:300px}}
+
+body.facility-refreshed{--accent:#197c76}body.facility-refreshed.maple-theme{--accent:#886a9e}body.facility-refreshed.cocofull-theme{--accent:#b46c85}body.facility-refreshed.miracle-theme{--accent:#b38a35}
+body.facility-refreshed .facility-hero h1,body.facility-refreshed main h2,body.facility-refreshed .info-item h3,body.facility-refreshed .content-item h3{color:var(--accent)}
+body.facility-refreshed .facility-jump a{color:var(--accent)}
+body.facility-refreshed .facility-hero .exterior-feature img{width:100%;object-fit:contain}
+body.facility-refreshed .map-link:hover,body.facility-refreshed .facility-jump a:hover{filter:brightness(.97)}
+body.facility-refreshed .contact-cta a{display:inline-block}
+body.facility-refreshed .contact-cta p{max-width:700px;margin:10px auto}
+body.facility-refreshed .facility-hero{background:linear-gradient(135deg,#f1f9f5,#fff8f1)}
+body.facility-refreshed.miracle-theme .facility-overview,body.facility-refreshed.miracle-theme .daily-schedule,body.facility-refreshed.miracle-theme .items-to-bring{padding:35px 0}
+body.facility-refreshed.miracle-theme .overview-content{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.facility-refreshed.miracle-theme .info-box,body.facility-refreshed.miracle-theme .items-content,body.facility-refreshed.miracle-theme .schedule-timeline{background:#fff;border:1px solid #e4ede9;border-radius:18px;padding:24px;box-shadow:0 5px 18px #214f4310}
+body.facility-refreshed.miracle-theme .info-box h3{color:var(--accent)}
+body.facility-refreshed.miracle-theme .timeline-item{display:grid;grid-template-columns:100px 1fr;gap:15px;border-bottom:1px solid #e4ede9;padding:10px 0}
+body.facility-refreshed.miracle-theme .timeline-item:last-child{border-bottom:0}
+body.facility-refreshed.miracle-theme .time{font-weight:700;color:var(--accent)}
+body.facility-refreshed.miracle-theme .items-list{line-height:2}
+@media(max-width:760px){body.facility-refreshed.miracle-theme .overview-content{grid-template-columns:1fr}body.facility-refreshed.miracle-theme .timeline-item{grid-template-columns:80px 1fr}}
+
+/* Final pass */
+html{scroll-behavior:smooth;scroll-padding-top:105px}a:focus-visible{outline:3px solid #d57e31;outline-offset:3px}.facility-jump{scroll-margin-top:90px}
+@media(max-width:650px){.facility-jump{display:flex;flex-wrap:wrap;gap:8px}.facility-jump a{min-height:40px;display:inline-flex;align-items:center;justify-content:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

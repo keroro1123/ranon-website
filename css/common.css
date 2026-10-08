@@ -61,3 +61,12 @@ footer {
         padding: 1rem;
     }
 }
+/* v3: prevent the corporate logo from filling the facility page */
+body > header nav{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1160px;margin:0 auto;padding:0 24px;min-height:76px}
+body > header nav .logo{display:flex;align-items:center;flex:0 0 auto;min-width:0}
+body > header nav .logo a{display:flex;align-items:center;gap:10px;text-decoration:none}
+body > header nav .logo img{display:block!important;width:82px!important;height:58px!important;max-width:82px!important;max-height:58px!important;object-fit:contain!important}
+body > header nav .logo .company-name{font-size:12px;font-weight:700;white-space:nowrap;color:#205e60}
+body > header nav .nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px;list-style:none;margin:0;padding:0}
+body > header nav .nav-links a{text-decoration:none}
+@media(max-width:650px){body > header nav{flex-direction:column;gap:8px;padding:10px 16px}body > header nav .logo img{width:65px!important;height:45px!important}body > header nav .nav-links{justify-content:center;font-size:12px}}
