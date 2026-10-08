@@ -1,5 +1,12 @@
-/* Gentle logo entrance; no image filters (avoids dark outlines). */
-.hero-art .art-center img{mix-blend-mode:multiply;filter:none}
-.hero-art .art-center{animation:ranon-logo-reveal 2.4s cubic-bezier(.22,1,.36,1) both}
-@keyframes ranon-logo-reveal{0%{opacity:0;transform:translate3d(0,22px,0) scale(.965)}100%{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+/* Blend the entire logo panel with the hero, so the original white raster
+   background visually disappears even while the reveal animation runs. */
+.hero-art .art-center{
+  mix-blend-mode:multiply;
+  animation:ranon-logo-reveal 2.4s cubic-bezier(.22,1,.36,1) both;
+}
+.hero-art .art-center img{mix-blend-mode:normal;filter:none}
+@keyframes ranon-logo-reveal{
+  0%{opacity:0;transform:translate3d(0,22px,0) scale(.965)}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
 @media(prefers-reduced-motion:reduce){.hero-art .art-center{animation:none}}
