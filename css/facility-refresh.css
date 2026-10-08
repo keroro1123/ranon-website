@@ -1,0 +1,50 @@
+/* RANON facility page refresh — scoped to まあぶる */
+body.marble-theme{background:#f7faf8;color:#304c49;font-family:'M PLUS Rounded 1c',Meiryo,sans-serif}
+body.marble-theme *{box-sizing:border-box}
+body.marble-theme > header{background:#fff!important;border-radius:0!important;padding:0!important;box-shadow:0 1px 12px #123c3810!important;position:relative;z-index:3}
+body.marble-theme > header .nav-links a{color:#275f60!important;font-weight:700;font-size:14px}
+body.marble-theme main{overflow:hidden}
+body.marble-theme .crumb{max-width:1160px;margin:0 auto;padding:20px 28px 4px;font-size:12px;color:#748987}
+body.marble-theme .crumb a{color:#527e7c;text-decoration:none}
+body.marble-theme .crumb span{padding:0 9px}
+body.marble-theme .facility-hero{padding:36px 22px 45px;text-align:center;background:linear-gradient(140deg,#eef8f1,#f8fcf9 65%,#fff4e9);border-radius:0 0 44px 44px}
+body.marble-theme .facility-hero h1{font-size:clamp(25px,3.4vw,42px);line-height:1.5;color:#176c64;margin:0 auto 10px;max-width:1000px}
+body.marble-theme .facility-hero .subtitle{font-size:clamp(14px,1.8vw,19px);color:#5d7971;margin:12px 0 0}
+body.marble-theme .exterior-feature{max-width:760px;margin:26px auto 0}
+body.marble-theme .exterior-feature img{height:clamp(260px,39vw,420px);max-height:none;object-fit:contain;background:#eaf0eb;border-radius:22px;box-shadow:0 15px 40px #174f4720}
+body.marble-theme .facility-jump{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding-top:25px;padding-bottom:8px}
+body.marble-theme .facility-jump a{border:1px solid #c9e3d9;border-radius:999px;background:#fff;padding:11px 19px;color:#256e66;text-decoration:none;font-size:13px;font-weight:700}
+body.marble-theme main section:not(.facility-hero){scroll-margin-top:25px}
+body.marble-theme main section:not(.facility-hero):not(.contact-cta){padding:30px 0}
+body.marble-theme main section .container{max-width:1050px}
+body.marble-theme main h2{font-size:clamp(22px,2.5vw,29px);color:#176c64;border-bottom:0;margin:0 0 25px;text-align:center}
+body.marble-theme main h2:after{content:'';display:block;width:56px;height:3px;background:#eaa263;border-radius:10px;margin:12px auto 0}
+body.marble-theme .info-grid,body.marble-theme .content-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.marble-theme .info-item,body.marble-theme .content-item,body.marble-theme .special-activities,body.marble-theme .program-policy{background:#fff;border:1px solid #e2eee9;border-radius:18px;padding:24px;box-shadow:0 5px 18px #214f4310}
+body.marble-theme .info-item h3,body.marble-theme .content-item h3{color:#1d7770;margin:0 0 12px;font-size:17px}
+body.marble-theme .info-item p,body.marble-theme .content-item p{margin:0;font-size:14px;line-height:1.9}
+body.marble-theme .therapy-content{background:#f0f7f3}
+body.marble-theme .therapy-content .content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+body.marble-theme .therapy-content .section-intro{max-width:800px;margin:0 auto 25px;text-align:center;line-height:1.9}
+body.marble-theme .additional-info{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+body.marble-theme .schedule-table{background:#fff;border-radius:16px;overflow:hidden;table-layout:fixed}
+body.marble-theme .schedule-table th{background:#dcefe7;color:#24695e;text-align:center}
+body.marble-theme .schedule-table td{vertical-align:top;line-height:1.9}
+body.marble-theme .schedule-table dt{font-weight:700;color:#21746c;margin-top:12px}
+body.marble-theme .schedule-table dd{margin-left:0}
+body.marble-theme .access{background:#f0f7f3}
+body.marble-theme .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+body.marble-theme .access-grid>div{background:#fff;border-radius:18px;padding:25px;min-width:0}
+body.marble-theme .access-info h3{color:#27736d;margin:0 0 4px}
+body.marble-theme .access-info p{margin:0 0 17px}
+body.marble-theme .map-link{display:flex;min-height:180px;align-items:center;justify-content:center;background:#edf7f3;border-radius:14px;padding:20px;text-align:center;color:#176c64;font-weight:700;text-decoration:none}
+body.marble-theme .contact-cta{background:linear-gradient(135deg,#187e78,#2d9991);color:#fff;text-align:center;padding:55px 20px}
+body.marble-theme .contact-cta h2{color:#fff}
+body.marble-theme .contact-cta h2:after{background:#ffcc96}
+body.marble-theme .cta-kicker{letter-spacing:.16em;font-size:12px}
+body.marble-theme .cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+body.marble-theme .cta-actions a{padding:13px 25px;border-radius:999px;font-weight:700;text-decoration:none}
+body.marble-theme .cta-primary{background:#fff;color:#146e67}
+body.marble-theme .cta-secondary{background:#f7b67e;color:#583b25}
+body.marble-theme footer{background:#195c5a}
+@media(max-width:760px){body.marble-theme .info-grid,body.marble-theme .content-grid,body.marble-theme .therapy-content .content-grid,body.marble-theme .additional-info,body.marble-theme .access-grid{grid-template-columns:1fr}body.marble-theme .facility-hero{padding:26px 14px 30px}body.marble-theme .facility-jump a{padding:9px 12px;font-size:12px}body.marble-theme .schedule-table th,body.marble-theme .schedule-table td{padding:10px;font-size:12px}body.marble-theme .exterior-feature img{height:300px}}

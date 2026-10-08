@@ -109,3 +109,5 @@ footer {
         margin: 0.5rem 1rem;
     }
 }
+/* ご家族向け資料 */
+.document-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.document-links a{display:flex;flex-direction:column;gap:10px;padding:24px;background:#edf7f3;border:1px solid #badbd3;border-radius:14px;color:#126b77;text-decoration:none}.document-links a:hover{background:#e0f1eb}.document-links a:focus-visible{outline:3px solid #d98632;outline-offset:4px}.document-links strong{font-size:1.2rem}.document-links span{line-height:1.7}footer{position:static}@media(max-width:640px){.document-links{grid-template-columns:1fr}}
