@@ -1,12 +1,13 @@
-/* Blend the entire logo panel with the hero, so the original white raster
-   background visually disappears even while the reveal animation runs. */
-.hero-art .art-center{
+/* Keep the logo blending directly with the hero background.
+   Animating parent opacity creates an isolated group and exposes the white rectangle. */
+.hero-art .art-center{mix-blend-mode:normal;animation:none}
+.hero-art .art-center img{
   mix-blend-mode:multiply;
-  animation:ranon-logo-reveal 2.4s cubic-bezier(.22,1,.36,1) both;
+  filter:none;
+  animation:ranon-logo-gentle-enter 2.4s cubic-bezier(.22,1,.36,1) both;
 }
-.hero-art .art-center img{mix-blend-mode:normal;filter:none}
-@keyframes ranon-logo-reveal{
-  0%{opacity:0;transform:translate3d(0,22px,0) scale(.965)}
-  100%{opacity:1;transform:translate3d(0,0,0) scale(1)}
+@keyframes ranon-logo-gentle-enter{
+  from{transform:translate3d(0,22px,0) scale(.96)}
+  to{transform:translate3d(0,0,0) scale(1)}
 }
-@media(prefers-reduced-motion:reduce){.hero-art .art-center{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero-art .art-center img{animation:none}}
