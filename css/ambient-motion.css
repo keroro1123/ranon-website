@@ -1,8 +1,10 @@
-/* Subtle ambient motion — visual only, no layout movement */
-.hero{position:relative;isolation:isolate}
-.hero::before,.hero::after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(24px);opacity:.42;will-change:transform,opacity}
-.hero::before{width:min(34vw,420px);aspect-ratio:1;background:radial-gradient(circle,#c5e8dd 0%,#d8efe5 55%,transparent 75%);top:-18%;right:-8%;animation:ranon-ambient-drift 24s ease-in-out infinite alternate}
-.hero::after{width:min(30vw,360px);aspect-ratio:1;background:radial-gradient(circle,#ffe3c5 0%,#f8e8d6 50%,transparent 75%);bottom:-20%;left:-7%;animation:ranon-ambient-drift 30s ease-in-out infinite alternate-reverse}
-@keyframes ranon-ambient-drift{0%{transform:translate3d(0,0,0) scale(1);opacity:.3}50%{opacity:.45}100%{transform:translate3d(18px,-16px,0) scale(1.08);opacity:.38}}
-@media(max-width:650px){.hero::before{width:260px;right:-110px;top:2%}.hero::after{width:220px;left:-95px;bottom:0}}
-@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none;will-change:auto}}
+/* RANON: gently visible ambient light, behind hero content */
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;z-index:0;pointer-events:none;border-radius:50%;filter:blur(16px);will-change:transform,opacity}
+.hero-layout,.hero-bottom{position:relative;z-index:1}
+.hero::before{width:min(48vw,570px);aspect-ratio:1;background:radial-gradient(circle,rgba(102,192,164,.52) 0%,rgba(153,216,194,.34) 48%,transparent 74%);top:-28%;right:-12%;animation:ranon-mint-drift 15s ease-in-out infinite alternate}
+.hero::after{width:min(43vw,500px);aspect-ratio:1;background:radial-gradient(circle,rgba(245,178,112,.48) 0%,rgba(251,211,166,.32) 50%,transparent 76%);bottom:-30%;left:-12%;animation:ranon-peach-drift 19s ease-in-out infinite alternate}
+@keyframes ranon-mint-drift{0%{transform:translate3d(-20px,22px,0) scale(.88);opacity:.65}50%{opacity:.92}100%{transform:translate3d(85px,-55px,0) scale(1.2);opacity:.8}}
+@keyframes ranon-peach-drift{0%{transform:translate3d(35px,-20px,0) scale(.9);opacity:.65}50%{opacity:.95}100%{transform:translate3d(-75px,50px,0) scale(1.17);opacity:.85}}
+@media(max-width:650px){.hero::before{width:340px;right:-135px;top:4%}.hero::after{width:300px;left:-130px;bottom:-5%}}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none;will-change:auto;opacity:.65}}
