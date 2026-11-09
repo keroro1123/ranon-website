@@ -4,7 +4,7 @@
   .wrap{padding-left:18px;padding-right:18px}
   .site-header .header-inner{padding-top:8px;padding-bottom:10px}
   .site-header .brand{justify-content:center;gap:8px}
-  .site-header .brand-sub{font-size:11px}
+  .site-header .brand-sub{font-size:16px}
   /* All four links visible without hidden horizontal navigation. */
   .site-header nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;overflow:visible;padding:8px 0 0;white-space:normal}
   .site-header nav a{min-width:0;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:clamp(9px,2.65vw,12px);line-height:1.35;padding:7px 2px;border-radius:12px;background:#f0f7f3}
