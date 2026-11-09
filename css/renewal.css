@@ -30,3 +30,19 @@ html{scroll-padding-top:110px}a:focus-visible{outline:3px solid #d57e31;outline-
   .shop-image img{display:block!important;width:100%;height:100%;object-fit:cover}
   .shop-section{break-inside:avoid;page-break-inside:avoid}
 }
+
+
+.hero .eyebrow{font-size:15px;letter-spacing:.18em}
+.hero-art .art-center img{width:min(550px,110%)}
+.hero-art .art-center small{font-size:20px}
+.hero-bottom span:last-child{color:var(--orange);font-size:15px;font-weight:800;letter-spacing:.08em}
+.about-pill{background:var(--orange);color:var(--ink);font-size:14px;font-weight:800;padding:10px 24px}
+.section-heading-simple{display:block}
+.card-content p{min-height:52px}
+.document-card{align-items:flex-start}
+.document-card>div:nth-child(2){flex:1}
+.document-link{display:inline-block!important;margin-top:12px;color:var(--teal)!important;font-weight:800}
+@media(max-width:650px){.hero .eyebrow{font-size:13px}.hero-art .art-center img{width:min(360px,96vw)}.hero-art .art-center small{font-size:16px}.card-content p{min-height:0}}
+
+/* Align opening times independently of day-label length. */
+.contact-hours{display:grid;grid-template-columns:minmax(0,1fr) max-content;column-gap:12px;row-gap:8px;margin:14px 0 0;padding-bottom:12px;border-bottom:1px solid #edf1ed;align-items:start}.contact-hours dt,.contact-hours dd{margin:0}.contact-hours dd{white-space:nowrap;font-variant-numeric:tabular-nums}
