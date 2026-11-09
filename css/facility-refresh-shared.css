@@ -71,3 +71,7 @@ body.facility-refreshed.miracle-theme .items-list{line-height:2}
 html{scroll-behavior:smooth;scroll-padding-top:105px}a:focus-visible{outline:3px solid #d57e31;outline-offset:3px}.facility-jump{scroll-margin-top:90px}
 @media(max-width:650px){.facility-jump{display:flex;flex-wrap:wrap;gap:8px}.facility-jump a{min-height:40px;display:inline-flex;align-items:center;justify-content:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Keep the cocofull introduction together on wide screens; wrap naturally on phones. */
+body.facility-refreshed .therapy-content .balanced-intro{max-width:none;text-wrap:pretty;word-break:normal;overflow-wrap:normal}
+@media(min-width:1100px){body.facility-refreshed .therapy-content .balanced-intro{white-space:nowrap;font-size:15px}}
