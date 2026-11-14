@@ -166,3 +166,26 @@ header {
 .button {
     background-color: var(--accent-color);
 }
+
+/* Access details: each label and value stay on the same aligned row. */
+body .access .access-info{
+    display:grid;
+    grid-template-columns:6em minmax(0,1fr);
+    gap:18px 16px;
+    align-content:start;
+    align-items:start;
+}
+body .access .access-info > h3,
+body .access .access-info > p{
+    margin:0;
+    min-width:0;
+    line-height:1.8;
+}
+body .access .access-info > h3{grid-column:1;white-space:nowrap}
+body .access .access-info > p{grid-column:2;overflow-wrap:anywhere}
+body .access .access-info a[href^="tel:"]{white-space:nowrap}
+@media(max-width:480px){
+    body .access .access-info{grid-template-columns:5em minmax(0,1fr);gap:16px 12px}
+    body .access .access-info > h3,
+    body .access .access-info > p{font-size:14px}
+}
